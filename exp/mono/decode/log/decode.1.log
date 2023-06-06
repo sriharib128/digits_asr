@@ -1,0 +1,32 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.1.gz" 
+# Started at Thu Jun  1 14:29:52 IST 2023
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+sung_test_utteranceID_0_9_8 zero nine eight 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_0_9_8 is -6.16127 over 310 frames.
+sung_test_utteranceID_1_0_9 one zero nine 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_1_0_9 is -6.3862 over 357 frames.
+sung_test_utteranceID_2_1_0 three one zero 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_2_1_0 is -6.2555 over 292 frames.
+sung_test_utteranceID_3_2_1 three two one 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_3_2_1 is -6.25555 over 328 frames.
+LOG (apply-cmvn[5.5.1074~1-71f3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+sung_test_utteranceID_4_3_2 four two 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_4_3_2 is -6.33163 over 303 frames.
+sung_test_utteranceID_5_4_3 five four 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_5_4_3 is -6.3789 over 274 frames.
+sung_test_utteranceID_6_5_4 seven four five four 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_6_5_4 is -6.43364 over 340 frames.
+sung_test_utteranceID_7_6_5 seven seven four five 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_7_6_5 is -6.59545 over 300 frames.
+sung_test_utteranceID_8_7_6 eight seven six 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_8_7_6 is -6.42517 over 369 frames.
+sung_test_utteranceID_9_8_7 nine seven 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sung_test_utteranceID_9_8_7 is -6.5863 over 295 frames.
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:176) Time taken 0.089016s: real-time factor assuming 100 frames/sec is 0.00280985
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:179) Done 10 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.38084 over 3168 frames.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Jun  1 14:29:52 IST 2023, elapsed time 0 seconds

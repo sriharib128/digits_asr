@@ -1,0 +1,28 @@
+# lattice-best-path --lm-scale=13 --word-symbol-table=exp/mono/graph/words.txt "ark:gunzip -c exp/mono/decode/lat.*.gz|" ark,t:exp/mono/decode/scoring/13.tra 
+# Started at Thu Jun  1 14:29:52 IST 2023
+#
+lattice-best-path --lm-scale=13 --word-symbol-table=exp/mono/graph/words.txt 'ark:gunzip -c exp/mono/decode/lat.*.gz|' ark,t:exp/mono/decode/scoring/13.tra 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_0_9_8, best cost 386.98 + 22562.8 = 22949.8 over 310 frames.
+sung_test_utteranceID_0_9_8 zero nine eight 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_1_0_9, best cost 422.195 + 26968.9 = 27391.1 over 357 frames.
+sung_test_utteranceID_1_0_9 one zero nine 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_2_1_0, best cost 384.852 + 21564.1 = 21949 over 292 frames.
+sung_test_utteranceID_2_1_0 three one zero 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_3_2_1, best cost 374.005 + 24276.7 = 24650.7 over 328 frames.
+sung_test_utteranceID_3_2_1 three two one 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_4_3_2, best cost 329.82 + 22717.4 = 23047.3 over 303 frames.
+sung_test_utteranceID_4_3_2 four two 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_5_4_3, best cost 349.56 + 20651.2 = 21000.8 over 274 frames.
+sung_test_utteranceID_5_4_3 five four 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_6_5_4, best cost 441.842 + 25841.9 = 26283.7 over 340 frames.
+sung_test_utteranceID_6_5_4 seven five four 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_7_6_5, best cost 461.965 + 23317.3 = 23779.2 over 300 frames.
+sung_test_utteranceID_7_6_5 seven seven four five 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_8_7_6, best cost 387.906 + 28092.7 = 28480.6 over 369 frames.
+sung_test_utteranceID_8_7_6 eight seven six 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance sung_test_utteranceID_9_8_7, best cost 296.24 + 23042.2 = 23338.4 over 295 frames.
+sung_test_utteranceID_9_8_7 nine seven 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:124) Overall cost per frame is 76.6637 = 1.21066 [graph] + 75.453 [acoustic] over 3168 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Jun  1 14:29:52 IST 2023, elapsed time 0 seconds
